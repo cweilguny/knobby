@@ -1,0 +1,19 @@
+{
+  "command": "openscad",
+  "maxWorkers": 30,
+  "sets": {
+    "height_addition": [6, 8, 10]
+  },
+  "tasks": {
+    "knobby": {
+      "title": "Knobby @height_addition@mm",
+      "run": ["height_addition"],
+      "commandArgs": [
+        "-o", "stl/Knobby @height_addition@mm.stl",
+        "-D", "HEIGHT_ADDITION=@height_addition@",
+        "scad/Knobby.scad"
+      ],
+      "createDirs": ["stl"]
+    }
+  }
+}
