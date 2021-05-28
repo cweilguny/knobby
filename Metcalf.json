@@ -2,15 +2,17 @@
   "command": "openscad",
   "maxWorkers": 30,
   "sets": {
-    "height_addition": [6, 8, 10]
+    "height_addition": [6, 8, 10],
+    "grip_type": ["Circular", "Sausage", "Without"]
   },
   "tasks": {
     "knobby": {
-      "title": "Knobby @height_addition@mm",
-      "run": ["height_addition"],
+      "title": "Knobby @height_addition@mm @grip_type@ grip",
+      "run": ["height_addition", "grip_type"],
       "commandArgs": [
-        "-o", "stl/Knobby @height_addition@mm.stl",
+        "-o", "stl/Knobby @height_addition@mm @grip_type@ Grip.stl",
         "-D", "HEIGHT_ADDITION=@height_addition@",
+        "-D", "GRIP_TYPE=\"@grip_type@\"",
         "scad/Knobby.scad"
       ],
       "createDirs": ["stl"]
