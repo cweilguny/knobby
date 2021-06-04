@@ -1,6 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 // ### CUSTOMIZABLE VARIABLES
 ////////////////////////////////////////////////////////////////////////////////
+// Xbox or PS4?
+CONTROLLER = "Xbox"; // [Xbox, PS4]
 // Width of the spool
 HEIGHT_ADDITION = 8;
 // Grip type
@@ -50,8 +52,8 @@ module main() {
 module foot() {
     difference() {
         cylinder(d = foot_diameter(), h = foot_height());
-        tz(FOOT_NOSE_HEIGHT) cylinder(d = CONTROLLER_KNOB_DIAMETER, h = CONTROLLER_KNOB_HEIGHT);
-        cylinder(d = CONTROLLER_KNOB_DIAMETER - FOOT_NOSE_WIDTH * 2, h = FOOT_NOSE_HEIGHT);
+        tz(FOOT_NOSE_HEIGHT) cylinder(d = controller_knob_diameter(), h = controller_knob_height());
+        cylinder(d = controller_knob_diameter() - FOOT_NOSE_WIDTH * 2, h = FOOT_NOSE_HEIGHT);
     }
 }
 
