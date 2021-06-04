@@ -48,6 +48,14 @@ with this grade of detail. If you can spare some more minutes, do it in
 0.10 mm - 0.12 mm layer height, then the top grips will be a bit more detailed.
 
 
+## Assembly
+
+Just take it off the printer and stick it onto the controller sticks. They are
+a really tight fit, you don't want them to come off during a game. If they are
+too tight, scale them slightly in your slicer, to e.g., 103% or 105%. You could
+also file or cut off a little bit off on the inside of the bottom wall.
+
+
 ## Modify, customize, remix!
 
 The OpenSCAD source files are attached as well. Feel free to modify, customize
