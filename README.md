@@ -16,7 +16,7 @@ The 8 mm Knobby is a good start.
 
 ### Top Grip Pattern
 
-Choose between three top grip tterns:
+Choose between three top grip patterns:
 
 - **Without:** Just a plain dome style top. No measures to add grip. Feels
   very slick and comfy. Works great for arcade gaming, or if you use the
