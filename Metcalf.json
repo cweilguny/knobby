@@ -7,7 +7,7 @@
   },
   "tasks": {
     "knobby_gripped": {
-      "title": "Knobby @height_addition@mm @grip_type@ Grip @grip_strength@",
+      "title": "Knobby @controller@ @height_addition@mm @grip_type@ Grip @grip_strength@",
       "sets": {
         "grip_type": ["Circular", "Sausage"],
         "grip_strength": ["Strong", "Slight"]
@@ -24,7 +24,7 @@
       "createDirs": ["stl"]
     },
     "knobby_ungripped": {
-      "title": "Knobby @height_addition@mm Without Grip",
+      "title": "Knobby @controller@ @height_addition@mm Without Grip",
       "run": ["controller", "height_addition"],
       "commandArgs": [
         "-o", "stl/Knobby @controller@ @height_addition@mm Without Grip.stl",
