@@ -3,3 +3,4 @@
 *.3mf
 *.gcode
 stl/
+tmp/
