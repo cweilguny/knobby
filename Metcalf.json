@@ -7,18 +7,18 @@
   },
   "tasks": {
     "knobby_gripped": {
-      "title": "Knobby @controller@ @height_addition@mm @grip_type@ Grip @grip_strength@",
+      "title": "Knobby @controller@ @height_addition@mm @grip_type@ Grip @grip_weight@",
       "sets": {
         "grip_type": ["Circular", "Sausage"],
-        "grip_strength": ["Strong", "Slight"]
+        "grip_weight": ["Light", "Bold"]
       },
-      "run": ["controller", "height_addition", "grip_type", "grip_strength"],
+      "run": ["controller", "height_addition", "grip_type", "grip_weight"],
       "commandArgs": [
-        "-o", "stl/Knobby @controller@ @height_addition@mm @grip_type@ Grip @grip_strength@.stl",
+        "-o", "stl/Knobby @controller@ @height_addition@mm @grip_type@ Grip @grip_weight@.stl",
         "-D", "CONTROLLER=\"@controller@\"",
         "-D", "HEIGHT_ADDITION=@height_addition@",
         "-D", "GRIP_TYPE=\"@grip_type@\"",
-        "-D", "GRIP_STRENGTH=\"@grip_strength@\"",
+        "-D", "GRIP_WEIGHT=\"@grip_weight@\"",
         "scad/Knobby.scad"
       ],
       "createDirs": ["stl"]

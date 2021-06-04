@@ -8,7 +8,7 @@ HEIGHT_ADDITION = 8;
 // Grip type
 GRIP_TYPE = "Circular"; // [Circular, Sausage, Without]
 // Grip strength
-GRIP_STRENGTH = "Strong"; // [Strong, Slight]
+GRIP_WEIGHT = "Light"; // [Light, Bold]
 
 module __Customizer_Limit__() {}
 
