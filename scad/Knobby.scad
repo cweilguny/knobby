@@ -3,10 +3,12 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Xbox or PS4?
 CONTROLLER = "Xbox"; // [Xbox, PS4]
-// Width of the spool
+// How much mm should the knob add on top of the stick?
 HEIGHT_ADDITION = 8;
 // Grip type
 GRIP_TYPE = "Circular"; // [Circular, Sausage, Without]
+// Grip strength
+GRIP_STRENGTH = "Strong"; // [Strong, Slight]
 
 module __Customizer_Limit__() {}
 
@@ -67,7 +69,7 @@ module top() {
 }
 
 module top_dome() {
-    z_scale_offset = GRIP_TYPE == "Circular" ? - GRIP_CIRCULAR_PROTRUSION : 0;
+    z_scale_offset = GRIP_TYPE == "Circular" ? - grip_circular_protrusion() : 0;
     sz((HEIGHT_ADDITION + z_scale_offset) / foot_radius()) sphere_half(foot_diameter());
 }
 
@@ -88,12 +90,12 @@ module top_grip_strip() {
 
 module grip_sausage() {
     tz(HEIGHT_ADDITION / 2)
-        rounded_cube([GRIP_SAUSAGE_LENGTH, GRIP_WIDTH, HEIGHT_ADDITION], GRIP_ROUNDING, true);
+        rounded_cube([grip_sausage_length(), GRIP_WIDTH, HEIGHT_ADDITION], GRIP_ROUNDING, true);
 }
 
 module grip_circular() {
-    tz(GRIP_CIRCULAR_PROTRUSION)
-        sz((HEIGHT_ADDITION - GRIP_CIRCULAR_PROTRUSION) / foot_radius())
+    tz(grip_circular_protrusion())
+        sz((HEIGHT_ADDITION - grip_circular_protrusion()) / foot_radius())
             rx(90)
                 rotate_extrude(angle = 180)
                     tx(foot_diameter() / 2 - GRIP_WIDTH / 2 - 0.2)

@@ -3,18 +3,34 @@
   "maxWorkers": 30,
   "sets": {
     "controller": ["Xbox", "PS4"],
-    "height_addition": [6, 8, 10],
-    "grip_type": ["Circular", "Sausage", "Without"]
+    "height_addition": [6, 8, 10]
   },
   "tasks": {
-    "knobby": {
-      "title": "Knobby @height_addition@mm @grip_type@ grip",
-      "run": ["controller", "height_addition", "grip_type"],
+    "knobby_gripped": {
+      "title": "Knobby @height_addition@mm @grip_type@ Grip @grip_strength@",
+      "sets": {
+        "grip_type": ["Circular", "Sausage"],
+        "grip_strength": ["Strong", "Slight"]
+      },
+      "run": ["controller", "height_addition", "grip_type", "grip_strength"],
       "commandArgs": [
-        "-o", "stl/Knobby @controller@ @height_addition@mm @grip_type@ Grip.stl",
-        "-D", "CONTROLLER=@controller@",
+        "-o", "stl/Knobby @controller@ @height_addition@mm @grip_type@ Grip @grip_strength@.stl",
+        "-D", "CONTROLLER=\"@controller@\"",
         "-D", "HEIGHT_ADDITION=@height_addition@",
         "-D", "GRIP_TYPE=\"@grip_type@\"",
+        "-D", "GRIP_STRENGTH=\"@grip_strength@\"",
+        "scad/Knobby.scad"
+      ],
+      "createDirs": ["stl"]
+    },
+    "knobby_ungripped": {
+      "title": "Knobby @height_addition@mm Without Grip",
+      "run": ["controller", "height_addition"],
+      "commandArgs": [
+        "-o", "stl/Knobby @controller@ @height_addition@mm Without Grip.stl",
+        "-D", "CONTROLLER=\"@controller@\"",
+        "-D", "HEIGHT_ADDITION=@height_addition@",
+        "-D", "GRIP_TYPE=\"Without\"",
         "scad/Knobby.scad"
       ],
       "createDirs": ["stl"]
