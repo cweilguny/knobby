@@ -49,9 +49,9 @@ also file or cut off a little bit off on the inside of the bottom wall.
 
 ## Modify, customize, remix!
 
-The OpenSCAD source files are attached as well. Feel free to modify, customize
-or remix. The height addition is a customizable parameter. To modify some more
-parameters, look at the `Knobby Variables.scad`.
+The OpenSCAD source files are attached as well in `Knobby Sources.zip`. Feel
+free to modify, customize or remix. The height addition is a customizable
+parameter. To modify some more parameters, look at the `Knobby Variables.scad`.
 
 If you own another controller, like a PS5 Dualshock, feel free to remix it,
 or just tell me the diameter of the knob on the stick in the comments, then
