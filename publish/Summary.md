@@ -5,12 +5,14 @@ Knobby is an extension for Xbox and PS4 controller sticks.
 
 ## Choices
 
-- **Height added:** The mm indications in the filenames tell you, how many millimeters the extension
-  adds on top of the stick. It really depends on your hands, games and gaming style,
-  how much height you want to add. **The 8 mm Knobby is a good start.**
+- **Height added:** The mm indications in the filenames tell you, how many
+  millimeters the extension adds on top of the stick. It really depends on
+  your hands, games and gaming style, how much height you want to add.
+  **The 8 mm Knobby is a good start.**
 
 
 - **Top Grip Pattern:** Choose between three top grip patterns:
+  
     - **Without:** Just a plain dome style top. No measures to add grip. Feels
       very slick and comfy. Works great for arcade gaming, or if you use the
       controller for other applications than games. In racing or FPS games
@@ -24,6 +26,7 @@ Knobby is an extension for Xbox and PS4 controller sticks.
 
 - **Top Grip Weight:** The "Circular" and "Sausage" versions have two different
   grip weights:
+  
     - **Light:** The pattern is light and doesn't protrude that much from the dome.
     - **Bold:** The pattern is stronger, more accentuated.
 
@@ -49,9 +52,9 @@ also file or cut off a little bit off on the inside of the bottom wall.
 
 ## Modify, customize, remix!
 
-The OpenSCAD source files are attached as well in `Knobby Sources.zip`. Feel
+The OpenSCAD source files are attached as well in **Knobby Sources.zip**. Feel
 free to modify, customize or remix. The height addition is a customizable
-parameter. To modify some more parameters, look at the `Knobby Variables.scad`.
+parameter. To modify some more parameters, look at **Knobby Variables.scad**.
 
 If you own another controller, like a PS5 Dualshock, feel free to remix it,
 or just tell me the diameter of the knob on the stick in the comments, then
