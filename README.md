@@ -2,4 +2,4 @@
 
 Knobby is an extension for Xbox and PS4 controller sticks.
 
-You can find it published at https://www.thingiverse.com/thing:4877941.
+You can find it published at https://www.thingiverse.com/thing:4878885.
